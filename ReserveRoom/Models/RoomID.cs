@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ReserveRoom.Models
 {
-    internal class RoomID
+    public class RoomID
     {
+        public int FloorNumber { get; }
+        public int RoomNumber { get; }
     }
 }

@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace ReserveRoom.Models
 {
-    internal class ReservationBook
+    public class ReservationBook
     {
+        private Dictionary<RoomID, List<Reservation>> _roomsToReserve;
+
+        public ReservationBook()
+        {
+                _roomsToReserve = new Dictionary<RoomID, List<Reservation>>();
+        }
+
+
+
+
     }
 }

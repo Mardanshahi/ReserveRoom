@@ -8,5 +8,15 @@ namespace ReserveRoom.Models
 {
     internal class Hotel
     {
+        private readonly ReservationBook _reservationBook;
+        public string Name { get; set; }
+
+        public Hotel(string name)
+        {
+            Name = name;
+
+            _reservationBook = new ReservationBook();
+        }
+
     }
 }
